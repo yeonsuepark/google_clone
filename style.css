@@ -46,3 +46,31 @@ a {
     align-self: center;
 }
 
+/* Main */
+#main {
+    display: grid;
+    grid-template-rows: 200px 80px 80px;
+    grid-template-areas: 
+        ". logo ."
+        ". searchbox ."
+        ". btn .";
+    justify-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+.searchbox {
+    grid-area: searchbox;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn {
+    grid-area: btn;
+    justify-self: center;
+    align-self: center;
+}
