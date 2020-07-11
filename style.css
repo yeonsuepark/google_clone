@@ -1,15 +1,16 @@
 body {
     font-family: "맑은 고딕", "굴림체", sans-serif;
     font-size: 11pt;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: rgba(0,0,0,0.87);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Navbar */
@@ -19,7 +20,9 @@ a {
     grid-template-rows: 40px;
     grid-template-columns: 1fr repeat(4, 45px);
     grid-template-areas: ". gmail images apps sign-in";
-
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 .gmail {
@@ -108,4 +111,86 @@ a {
 .lucky-btn:hover {
     border: 1px solid rgb(172, 175, 179);
     box-shadow: 0px 1px 2px gray;    
+}
+
+/* Footer */
+
+#footer {
+    border: 1px solid rgb(213, 218, 223);
+}
+
+.footer1 {
+    display: grid;
+    height: 40px;
+    grid-template-areas: "korea";
+    background-color: rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(213, 218, 223);
+}
+
+.footer2 {
+    display: grid;
+    height: 40px;
+    grid-template-columns: 60px 60px 100px 100px 1fr 140px 60px 60px;
+    grid-template-areas
+      :"advert business info search-work . privacy terms setting";
+    background-color: rgb(231, 231, 231);
+}
+
+.korea {
+    grid-area: korea;
+    justify-self: start;
+    align-self: center;
+    margin-left: 25px;
+    color: rgb(116, 116, 116);
+}
+
+.advert {
+    grid-area: advert;
+    justify-self: center;
+    align-self: center;
+    margin-left: 12px;
+    color: rgb(116, 116, 116);
+}
+
+.business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    color: rgb(116, 116, 116);
+}
+
+.info {
+    grid-area: info;
+    justify-self: center;
+    align-self: center;
+    color: rgb(116, 116, 116);
+}
+
+.search-work {
+    grid-area: search-work;
+    justify-self: center;
+    align-self: center;
+    color: rgb(116, 116, 116);
+}
+
+.privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    color: rgb(116, 116, 116);
+}
+
+.terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    color: rgb(116, 116, 116);
+}
+
+.setting {
+    grid-area: setting;
+    justify-self: center;
+    align-self: center;
+    margin-right: 12px;
+    color: rgb(116, 116, 116);
 }
