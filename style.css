@@ -67,6 +67,14 @@ a {
     grid-area: searchbox;
     justify-self: center;
     align-self: center;
+    width: 550px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+
+.searchbox:hover {
+    box-shadow: 1px 1px 5px gray;
 }
 
 .btn {
