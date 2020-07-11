@@ -2,6 +2,8 @@ body {
     font-family: "맑은 고딕", "굴림체", sans-serif;
     font-size: 11pt;
     margin: 0;
+    position: relative;
+    min-height: 100vh;
 }
 
 a {
@@ -58,6 +60,7 @@ a:hover {
         ". searchbox ."
         ". btn .";
     justify-items: center;
+    padding-bottom: 100px;
 }
 
 .logo {
@@ -83,7 +86,7 @@ a:hover {
 .btn {
     grid-area: btn;
     justify-self: center;
-    align-self: center;
+    align-self: start;
 }
 
 .search-btn {
