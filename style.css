@@ -49,7 +49,7 @@ a {
 /* Main */
 #main {
     display: grid;
-    grid-template-rows: 200px 80px 80px;
+    grid-template-rows: 200px 80px 70px;
     grid-template-areas: 
         ". logo ."
         ". searchbox ."
@@ -81,4 +81,31 @@ a {
     grid-area: btn;
     justify-self: center;
     align-self: center;
+}
+
+.search-btn {
+    border: none;
+    color: #5F6368;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.lucky-btn {
+    font-size: 11pt;
+    border: none;
+    color: #5F6368;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 4px;    
+}
+
+.search-btn:hover {
+    border: 1px solid rgb(172, 175, 179);
+    box-shadow: 0px 1px 2px gray;
+}
+
+.lucky-btn:hover {
+    border: 1px solid rgb(172, 175, 179);
+    box-shadow: 0px 1px 2px gray;    
 }
